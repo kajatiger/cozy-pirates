@@ -1,0 +1,15 @@
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        
+          <h3><%= place.name %></h3>
+          <p><%= place.description %></p>
+          <p><%= place.price %></p>
+          <div class="btn btn-default"><%= link_to 'book now', bookings_path, id: "button-default" %></div>
+          <div class="btn btn-info"><%= link_to 'Show more', place, id: "button-default" %></div>
+          <div class="btn btn-default"><%= link_to 'Edit', edit_place_path(place), id: "button-default" %></div>
+          <div class="btn btn-danger"><%= link_to 'Delete', place, method: :delete, data: { confirm: 'Are you sure?' }, id: "button-default" %></div>
+        
+      </div>
+    </div>
+  </div>

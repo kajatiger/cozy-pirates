@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room: MyString
+  name: MyString
+  surname: MyString
+  from: 2016-12-30
+  to: 2016-12-30
+  people: 1
+
+two:
+  room: MyString
+  name: MyString
+  surname: MyString
+  from: 2016-12-30
+  to: 2016-12-30
+  people: 1

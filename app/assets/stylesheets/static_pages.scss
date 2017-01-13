@@ -1,0 +1,171 @@
+// Place all the styles related to the STATIC_PAGES controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  margin: 0;
+}
+
+body {
+	height: 100%;
+	max-width: 100%;
+	background-color: #e5eb85; 
+  color: #34495e;
+  padding-top: 95px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/*NAVBAR STYLING*/
+#customnav ul li a {
+	color: white;
+	font-size: 1.3em;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 20px 20px 20px;
+	font-family: 'Titillium Web', Futura, Arial, sans-serif;
+	transition: color 600ms;
+}
+#homebutton {
+	color: #e5eb85;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+#customnav a:hover {
+  color: #ff007f; 
+  text-decoration: none;
+}
+.navbar {
+	color: white;
+	background-color: #5d98db;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	font-family: 'Titillium Web', Futura, Arial, sans-serif;
+	z-index: 1;
+}
+.glyphicon {
+	margin: 7px;
+}
+.dropdown-menu {
+	background-color: #5d98db;
+}
+
+/*BUTTON STYLE*/
+#button {
+	color: white;
+	font-family: 'Titillium Web', Futura, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+#button:hover {
+	color: #ff007f;
+}
+#button-default {
+	color: #454275;
+	font-family: 'Titillium Web', Futura, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+#button-default:hover {
+	color: #ff007f;
+}
+/* STICKY FOOTER */
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+#bottom {
+	margin-bottom: 400px;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+.site-footer {
+  background: #5d98db;
+}
+.copyright {
+	text-align: left;
+	margin: 20px;
+}
+.follow-twitter {
+	float: right;
+	margin: 3px;
+}
+.fb-like {
+	float: right;
+	margin: 3px;
+}
+
+/* LANDING PAGE JUMBO*/
+.jumbotron {
+	background-image: image-url("terrace.JPG");
+	padding-bottom: 40px;
+	color: black;
+	margin: 10px
+}
+.jumbotron h1 {
+	margin: 50px;
+	padding: 20px;
+}
+.jumbotron h2 {
+	margin: 20px;
+	padding: 10px;
+	color: white;
+	background: black;
+}
+.about-button {
+	padding: 17px;
+	margin-bottom: 200px;
+	margin-left: 50px;
+}
+
+/* ABOUT ROWS*/
+
+.page-header {
+	background-image: image-url("terrace.JPG");
+	padding-bottom: 100px;
+	color: black;
+}
+.page-header h1 {
+	margin: 40px;
+	padding: 17px;
+}
+.page-header p,
+						h4 {
+	font-family: Georgia,Times,"Times New Roman",serif;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	margin: 40px;
+	padding-top:0;
+	padding-bottom: 17px;
+	pagging-right: 17px;
+	pagging-left: 17px;
+}
+.page-header li {
+	font-size: 1.5em;
+	font-family: Georgia,Times,"Times New Roman", serif;
+}
+
+#small {
+	color: white;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.thumbnail {
+	padding: 0; /* since I added the imgs to the thumbnails, the page has a x-overflow*/
+}
+.caption p {
+	font-family: Georgia,Times,"Times New Roman",serif;
+	font-size: 1.3em;
+}

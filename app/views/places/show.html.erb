@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row" data-place-id="<%= @place.id %>">
+ <div class="col-xs-12 col-md-8">
+   <%= image_tag(@place.image_url, size: "800x800", class: "img-responsive img-zoom", id: "place-img", data_zoom_image: @place.image_url) %>
+ </div>
+ <div class="col-xs-6 col-md-4">
+   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+ <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingOne">
+     <h4 class="panel-title">
+       <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <%= @place.name %>
+       </a>
+     </h4>
+   </div>
+   <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+     <div class="panel-body">
+       <%= @place.description %>
+     </div>
+   </div>
+ </div>
+ <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingTwo">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Details
+       </a>
+     </h4>
+   </div>
+
+   <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+     <div class="panel-body">
+       <%= @place.description %>
+     
+<p>
+ <strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></strong>
+ <%= @place.price %>
+ 
+
+</p>
+
+     </div>
+   </div>
+ </div>
+</div>
+
+ </div>
+</div>
+
+<div class="btn btn-default"><%= link_to 'book now', bookings_new_path, id: "button-default" %></div>
+
+
+
+
+

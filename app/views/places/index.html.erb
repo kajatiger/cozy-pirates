@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+<div class="jumbotron" id="accomodations">
+  <div class="container">
+    <h1>Places</h1>
+    <p>Book your perfect accomodation. Surf Wild. Stay Cozy.</p>
+  </div>
+</div>
+
+
+<div class="row">
+  <% @places.each do |place| %>     
+    <%= render place %>
+  <% end %>
+</div>
+
+

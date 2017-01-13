@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CozyPirates</title>
+    <%= csrf_meta_tags %>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  </head>
+
+    <body data-spy="scroll" data-target=".navbar">
+    <div class="page-wrap">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+  	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="page-wrap">
+  <div class="container-fluid" id="customnav">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to '', root_path, class: "btn btn-default btn-lg glyphicon glyphicon-home" %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li><%= link_to 'Accomodations', places_path %></li>
+        <li><%= link_to 'Photos', static_pages_photos_path %> </li>
+        <li><%= link_to 'contact', static_pages_contact_path %></li>
+        <li><%= link_to 'About', static_pages_about_path %> </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          	<li> About The Cozy Pirates </li>
+        
+            <li role="separator" class="divider"></li>
+            <li><a href="https://www.instagram.com/kaja_tiger/">Instagram</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://github.com/kajatiger">Github</a></li>
+          </ul>
+        </li>
+        
+      </ul>  
+      
+        
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+  
+    <%= yield %>
+
+   
+    
+   </div> <!-- page wrap end --> 
+    <footer class="site-footer">
+      <div class="follow-twitter">
+        <a href="https://twitter.com/AlizeNero" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @AlizeNero
+        </a>
+      </div> <!-- follow twitter end -->
+      <div class="fb-like" data-href="http://kaja.bitballoon.com/" data-width="40px" data-layout="button" data-action="like" data-show-faces="true" data-share="false">
+      </div>  
+      <div class="copyright">
+        <p>&copy; 2016 Cozy Surfers Berlin</p>
+      </div> <!-- copyright end -->
+  		
+		</footer>
+  </body>
+</html>
+
