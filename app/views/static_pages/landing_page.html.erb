@@ -3,3 +3,44 @@
   <h2>The most beautiful surf house in Taghazout. We offer cozy accomodations, excellent service and rentable surf equipment. Come and check out more about us! </h2>
   <p><%= link_to 'About', static_pages_about_path, class: "btn btn-default btn-lg about-button", id: "button-default" %></p>
 </div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= image_tag("trip.jpg", size: "400x400", class: "img-responsive") %>
+      <div class="caption">
+        <h3>Get around</h3>
+        <p>You want to see other places in the area? Come and book trips to the most beautiful places around. For example a day in Paradise Valley. It is a djungle like valley 40 minutes from Taghazout with a canyon with beautiful natural swimming pools of fresh mountain water and high palm trees and flowers. Our day trip includes the way there and back, a tasty tajine for lunch there and some refreshing and healthy snacks. </p>
+        <p>Another interesting day trip is the journey through the Souk of Agadir. "Souk" stands for a bazar with many stands of traditional Moroccan handcraft, huge pyramides of different spices, handpressed Amlou (traditional Moroccan Almond-Honey-Paste), magical carpets and teapots, dried figgs, dates and Arabic spice coffee and much more... Our day trip to the Souk includes the transport, some historical guidance and fair prices for whatever you wish to buy.</p>
+        <div class="btn btn-default"><%= link_to 'Show more', places_show_path, id: "button-default" %></div> 
+        <div class="btn btn-default"><%= link_to 'Book Now', bookings_path, id: "button-default" %></div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= image_tag("fixBoard.jpg", size: "400x400", class: "img-responsive") %>
+      <div class="caption">
+        <h3>Surf Camp</h3>
+        <p>You are a group of people or one person who wants to start surfing? We offer a full package of accomodation right at the  surf spots, healthy breakfast, lunch and dinner, surf lessons, renting surf equipment and a fotoshoot of your first success in the waves.</p>
+        <div class="btn btn-default"><%= link_to 'Show more', places_show_path, id: "button-default" %></div> 
+        <div class="btn btn-default"><%= link_to 'Book Now', bookings_path, id: "button-default" %></div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= image_tag("xmas-couple.jpeg", size: "400x400", class: "img-responsive") %>
+      <div class="caption">
+        <h3>Parties</h3>
+        <p>You want to celebrate any special occasion or just the fact that life is beautiful? No problem, booking your stay with The Cozy Pirates gives you the opportunity to have a nice party with food, alcoholic beverages, music, a beautiful terrace and common area, a fireplace, a cake, candle light and much more.</p>
+        <div class="btn btn-default"><%= link_to 'Show more', places_show_path, id: "button-default" %></div> 
+        <div class="btn btn-default"><%= link_to 'Book Now', bookings_path, id: "button-default" %></div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="calendar"></div>
+
+
