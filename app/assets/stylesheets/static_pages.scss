@@ -112,7 +112,8 @@ body {
 	background-image: image-url("header.jpg");
 	padding-bottom: 100px;
 	color: white;
-	margin: 0px
+	margin: 0px;
+	margin-bottom: 50px;
 }
 .transbox {
 	margin-top: 70px;
@@ -137,6 +138,14 @@ body {
 	padding: 17px;
 	margin-left: 50px;
 }
+
+/*LANDING PAGE BOXES*/
+
+.caption ul,
+				li {
+				font-family: Georgia,Times,"Times New Roman",serif;
+				font-size: 1.1em;
+				}
 
 /* ABOUT ROWS*/
 
@@ -177,4 +186,16 @@ body {
 .caption p {
 	font-family: Georgia,Times,"Times New Roman",serif;
 	font-size: 1.3em;
+}
+
+/* PLACES */
+
+.panel-title {
+	font-family: 'Titillium Web', Futura, Arial, sans-serif;
+	font-size: 1.5em;
+}
+
+.panel-body {
+	font-family: Georgia,Times,"Times New Roman",serif;
+	font-size: 1.2em;
 }

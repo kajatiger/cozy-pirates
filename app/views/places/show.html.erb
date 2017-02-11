@@ -33,12 +33,13 @@
      <div class="panel-body">
        <%= @place.description %>
      
-<p>
- <strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></strong>
- <%= @place.price %>
- 
+      <p>
+       <strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></strong>
+       <%= @place.price %>
+       
 
-</p>
+      </p>
+      <div class="btn btn-default"><%= link_to 'book now', bookings_new_path, id: "button-default" %></div>
 
      </div>
    </div>
@@ -48,7 +49,6 @@
  </div>
 </div>
 
-<div class="btn btn-default"><%= link_to 'book now', bookings_new_path, id: "button-default" %></div>
 
 
 
