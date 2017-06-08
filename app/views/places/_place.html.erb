@@ -6,7 +6,7 @@
           <h3><%= place.name %></h3>
           <p><%= place.description %></p>
           <p><%= place.price %></p>
-          <div class="btn btn-default"><%= link_to 'book now', bookings_path, id: "button-default" %></div>
+          <div class="btn btn-default"><%= link_to 'book now', new_booking_path, id: "button-default" %></div>
           <div class="btn btn-info"><%= link_to 'Show more', place, id: "button-default" %></div>
 
           <% if signed_in? && current_user.admin? %>
