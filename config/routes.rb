@@ -10,6 +10,11 @@ Rails.application.routes.draw do
 
 
   resources :places
+  
+  get 'dashboard/show'
+
+  get 'dashboard/index'
+
   get 'places/show'
 
   get 'places/index'
