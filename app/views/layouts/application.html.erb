@@ -76,6 +76,15 @@
             <li role="separator" class="divider"></li>
             <li><a href="https://www.facebook.com/cozybackpacker/">Facebook</a></li>
           </ul>
+          <ul class="nav pull-right">
+            <li>
+            <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+            <% end %>
+            </li>
+          </ul>
         </li>
         
       </ul>  
@@ -84,7 +93,9 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
     </nav>
-  
+    
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
 
    

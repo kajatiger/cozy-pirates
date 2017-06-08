@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  devise_for :users
+  resources :users
   resources :bookings, only: [:index, :show, :create, :destroy, :new]
   get 'bookings/index'
 
@@ -17,6 +19,8 @@ Rails.application.routes.draw do
   get 'static_pages/contact'
 
   post 'static_pages/thank_you'
+
+  get 'static_pages/thank_you'
 
   get 'static_pages/about'
 
